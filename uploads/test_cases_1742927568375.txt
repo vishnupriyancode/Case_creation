@@ -1,0 +1,130 @@
+Test Case ID: TC_001
+Title: Chrome Browser Compatibility Test
+Test Scenario: Verify application functionality in Chrome browser
+Test Steps:
+1. Launch Chrome browser
+2. Navigate to application URL
+3. Test all major functionalities
+4. Verify responsive design
+5. Check all UI elements rendering
+Expected Results:
+- Application should work properly in Chrome
+- All features should function as expected
+- UI should be properly rendered
+- No visual glitches should be present
+Priority: High
+Status: Not Started
+
+Test Case ID: TC_002
+Title: Firefox Browser Compatibility Test
+Test Scenario: Verify application functionality in Firefox browser
+Test Steps:
+1. Launch Firefox browser
+2. Navigate to application URL
+3. Test all major functionalities
+4. Verify responsive design
+5. Check all UI elements rendering
+Expected Results:
+- Application should work properly in Firefox
+- All features should function as expected
+- UI should be properly rendered
+- No visual glitches should be present
+Priority: High
+Status: Not Started
+
+Test Case ID: TC_003
+Title: Screenshot Capture on User Click
+Test Scenario: Verify screenshot capture functionality on user interactions
+Test Steps:
+1. Navigate to application
+2. Perform various user clicks
+3. Check screenshot capture for each click
+4. Verify screenshot storage
+5. Validate screenshot quality
+Expected Results:
+- Screenshots should be captured for each user click
+- Screenshots should be properly stored
+- Image quality should be clear
+- Screenshot metadata should be correct
+Priority: High
+Status: Not Started
+
+Test Case ID: TC_004
+Title: Valid User Login
+Test Scenario: Verify login functionality with valid credentials
+Test Steps:
+1. Navigate to login page
+2. Enter valid username
+3. Enter valid password
+4. Click login button
+5. Verify successful login
+Expected Results:
+- User should be successfully logged in
+- Redirect to dashboard
+- Proper welcome message should be displayed
+Priority: High
+Status: Not Started
+
+Test Case ID: TC_005
+Title: Invalid User Login
+Test Scenario: Verify login functionality with invalid credentials
+Test Steps:
+1. Navigate to login page
+2. Enter invalid username
+3. Enter invalid password
+4. Click login button
+5. Verify error handling
+Expected Results:
+- Login should fail
+- Appropriate error message should be displayed
+- User should remain on login page
+Priority: High
+Status: Not Started
+
+Test Case ID: TC_006
+Title: Form Submission with Valid Data
+Test Scenario: Verify form submission with valid input data
+Test Steps:
+1. Navigate to form page
+2. Enter valid data in all fields
+3. Submit the form
+4. Verify submission success
+5. Check database entry
+Expected Results:
+- Form should be submitted successfully
+- Success message should be displayed
+- Data should be stored in database correctly
+Priority: High
+Status: Not Started
+
+Test Case ID: TC_007
+Title: Form Submission with Invalid Data
+Test Scenario: Verify form validation with invalid input data
+Test Steps:
+1. Navigate to form page
+2. Enter invalid data in fields
+3. Try to submit the form
+4. Verify validation messages
+Expected Results:
+- Form submission should be prevented
+- Validation errors should be displayed
+- Invalid fields should be highlighted
+Priority: High
+Status: Not Started
+
+Test Case ID: TC_008
+Title: Database Storage Validation
+Test Scenario: Verify data storage and retrieval functionality
+Test Steps:
+1. Submit form with test data
+2. Verify database storage
+3. Retrieve stored data
+4. Compare with submitted data
+5. Check data integrity
+Expected Results:
+- Data should be stored correctly in database
+- Retrieved data should match submitted data
+- No data corruption should occur
+Priority: High
+Status: Not Started
+

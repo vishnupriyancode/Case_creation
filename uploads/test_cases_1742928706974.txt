@@ -1,0 +1,147 @@
+Test Case ID: TC_001
+Title: Basic Value Aggregation Test
+Test Scenario: Verify aggregation of values 1, 2, and 3
+Test Steps:
+1. Navigate to calculation page
+2. Enter value 1 in first input
+3. Enter value 2 in second input
+4. Enter value 3 in third input
+5. Click calculate button
+6. Verify sum calculation
+7. Check result display
+Expected Results:
+- Values should be successfully aggregated
+- Sum should equal 6 (1 + 2 + 3)
+- Result should be displayed correctly
+- Result should be stored in database
+Priority: High
+Status: Not Started
+
+Test Case ID: TC_002
+Title: Addition with Value 5
+Test Scenario: Verify addition of previous result with value 5
+Test Steps:
+1. Navigate to calculation page
+2. Enter previous result (6) in first input
+3. Enter value 5 in second input
+4. Click calculate button
+5. Verify final sum
+6. Check result persistence
+Expected Results:
+- Values should be successfully added
+- Sum should equal 11 (6 + 5)
+- Result should be displayed correctly
+- Result should be stored in database
+Priority: High
+Status: Not Started
+
+Test Case ID: TC_003
+Title: API Success Response Validation
+Test Scenario: Verify API response for successful calculations
+Test Steps:
+1. Prepare API request with valid data
+2. Send POST request to calculation endpoint
+3. Verify response status code
+4. Validate response format
+5. Check calculation result
+Expected Results:
+- API should return 200 status code
+- Response should contain correct calculation
+- Response format should match specification
+- Response time should be within limits
+Priority: High
+Status: Not Started
+
+Test Case ID: TC_004
+Title: API Error Response Validation
+Test Scenario: Verify API error handling for invalid inputs
+Test Steps:
+1. Prepare API request with invalid data
+2. Send POST request to calculation endpoint
+3. Verify error response status code
+4. Validate error message format
+5. Check error details
+Expected Results:
+- API should return appropriate error code
+- Error message should be clear and descriptive
+- Response should include error details
+- Error should be logged in system
+Priority: High
+Status: Not Started
+
+Test Case ID: TC_005
+Title: Form Submission - Valid Numeric Data
+Test Scenario: Verify form submission with valid numeric values (1, 2, 3)
+Test Steps:
+1. Navigate to form page
+2. Enter value 1 in first numeric field
+3. Enter value 2 in second numeric field
+4. Enter value 3 in third numeric field
+5. Fill other required fields
+6. Submit the form
+7. Verify submission success
+8. Check database entry
+Expected Results:
+- Form should be submitted successfully
+- Numeric values should be stored correctly
+- Success message should be displayed
+- Database should contain exact values (1, 2, 3)
+- User should be redirected to confirmation page
+Priority: High
+Status: Not Started
+
+Test Case ID: TC_006
+Title: Form Submission - Invalid Numeric Data
+Test Scenario: Verify form validation with invalid numeric inputs
+Test Steps:
+1. Navigate to form page
+2. Enter non-numeric values in numeric fields
+3. Enter special characters in numeric fields
+4. Try to submit the form
+5. Verify validation behavior
+Expected Results:
+- Form submission should be prevented
+- Validation errors should be displayed
+- Error messages should indicate numeric values required
+- Invalid fields should be highlighted
+- Focus should be set to first invalid field
+Priority: High
+Status: Not Started
+
+Test Case ID: TC_007
+Title: Numeric Data Validation
+Test Scenario: Verify storage and retrieval of numeric values
+Test Steps:
+1. Submit form with numeric values (1, 2, 3)
+2. Record submission timestamp
+3. Query database for stored record
+4. Compare numeric values
+5. Verify data types
+6. Check calculation results
+Expected Results:
+- Numeric values should be stored as numbers
+- Retrieved values should match submitted values
+- Calculations should be accurate
+- No data type conversion issues
+- Sum of values should equal 6
+Priority: High
+Status: Not Started
+
+Test Case ID: TC_008
+Title: Data Integrity Test
+Test Scenario: Verify data integrity during concurrent operations
+Test Steps:
+1. Submit multiple forms concurrently
+2. Perform calculations on stored values
+3. Update existing records
+4. Verify all stored data
+5. Check calculation results
+Expected Results:
+- All submissions should be stored correctly
+- No data corruption during concurrent access
+- Calculations should remain accurate
+- Data consistency should be maintained
+- Audit trail should be complete
+Priority: High
+Status: Not Started
+

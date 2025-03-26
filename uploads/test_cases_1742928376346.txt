@@ -1,0 +1,261 @@
+Test Case ID: TC_001
+Title: Chrome Browser Compatibility Test
+Test Scenario: Verify application functionality in Chrome browser
+Test Steps:
+1. Launch Chrome browser
+2. Navigate to application URL
+3. Test all major functionalities
+4. Verify responsive design
+5. Check all UI elements rendering
+Expected Results:
+- Application should work properly in Chrome
+- All features should function as expected
+- UI should be properly rendered
+- No visual glitches should be present
+Priority: High
+Status: Not Started
+
+Test Case ID: TC_002
+Title: Firefox Browser Compatibility Test
+Test Scenario: Verify application functionality in Firefox browser
+Test Steps:
+1. Launch Firefox browser
+2. Navigate to application URL
+3. Test all major functionalities
+4. Verify responsive design
+5. Check all UI elements rendering
+Expected Results:
+- Application should work properly in Firefox
+- All features should function as expected
+- UI should be properly rendered
+- No visual glitches should be present
+Priority: High
+Status: Not Started
+
+Test Case ID: TC_003
+Title: Screenshot Capture on User Click
+Test Scenario: Verify screenshot capture functionality on user interactions
+Test Steps:
+1. Navigate to application
+2. Perform various user clicks
+3. Check screenshot capture for each click
+4. Verify screenshot storage
+5. Validate screenshot quality
+Expected Results:
+- Screenshots should be captured for each user click
+- Screenshots should be properly stored
+- Image quality should be clear
+- Screenshot metadata should be correct
+Priority: High
+Status: Not Started
+
+Test Case ID: TC_004
+Title: Valid User Login
+Test Scenario: Verify login functionality with valid credentials
+Test Steps:
+1. Navigate to login page
+2. Enter valid username
+3. Enter valid password
+4. Click login button
+5. Verify successful login
+Expected Results:
+- User should be successfully logged in
+- Redirect to dashboard
+- Proper welcome message should be displayed
+Priority: High
+Status: Not Started
+
+Test Case ID: TC_005
+Title: Invalid User Login
+Test Scenario: Verify login functionality with invalid credentials
+Test Steps:
+1. Navigate to login page
+2. Enter invalid username
+3. Enter invalid password
+4. Click login button
+5. Verify error handling
+Expected Results:
+- Login should fail
+- Appropriate error message should be displayed
+- User should remain on login page
+Priority: High
+Status: Not Started
+
+Test Case ID: TC_006
+Title: Form Submission - Valid Data
+Test Scenario: Verify form submission with complete valid data
+Test Steps:
+1. Navigate to form page
+2. Enter valid numeric values (1, 2, 3)
+3. Enter valid text in description field
+4. Select valid options from dropdowns
+5. Submit the form
+6. Verify submission success
+7. Check database entry
+Expected Results:
+- Form should be submitted successfully
+- Success message should be displayed
+- Data should be stored in database correctly
+- User should be redirected to confirmation page
+- All form fields should be cleared after submission
+Priority: High
+Status: Not Started
+
+Test Case ID: TC_007
+Title: Form Submission - Invalid Numeric Data
+Test Scenario: Verify form validation with invalid numeric inputs
+Test Steps:
+1. Navigate to form page
+2. Enter non-numeric values in numeric fields
+3. Enter valid text in other fields
+4. Try to submit the form
+5. Verify validation messages
+Expected Results:
+- Form submission should be prevented
+- Validation errors should be displayed for numeric fields
+- Invalid fields should be highlighted in red
+- Error messages should be clear and descriptive
+- Valid fields should retain their values
+Priority: High
+Status: Not Started
+
+Test Case ID: TC_008
+Title: Form Submission - Empty Required Fields
+Test Scenario: Verify form validation with missing required data
+Test Steps:
+1. Navigate to form page
+2. Leave required fields empty
+3. Fill some optional fields
+4. Try to submit the form
+5. Verify validation behavior
+Expected Results:
+- Form submission should be prevented
+- Required field validation messages should be displayed
+- Empty required fields should be highlighted
+- Optional filled fields should retain their values
+- Focus should be set to first empty required field
+Priority: High
+Status: Not Started
+
+Test Case ID: TC_009
+Title: Database Storage - Complete Data Validation
+Test Scenario: Verify complete data storage and retrieval functionality
+Test Steps:
+1. Submit form with test data including numeric values (1,2,3)
+2. Record the submission timestamp
+3. Query database for stored record
+4. Compare all stored fields with submitted data
+5. Verify data types and formats
+6. Check timestamp accuracy
+Expected Results:
+- All form fields should be stored correctly
+- Numeric values should maintain precision
+- Timestamp should match submission time
+- Data types should be preserved
+- No data truncation should occur
+Priority: High
+Status: Not Started
+
+Test Case ID: TC_010
+Title: Database Validation - Special Characters
+Test Scenario: Verify storage of text with special characters
+Test Steps:
+1. Submit form with special characters in text fields
+2. Include various special characters and symbols
+3. Query database for stored record
+4. Compare stored text with submitted text
+5. Verify character encoding
+Expected Results:
+- Special characters should be stored correctly
+- No character corruption should occur
+- Retrieved text should match submitted text exactly
+- Character encoding should be preserved
+Priority: High
+Status: Not Started
+
+Test Case ID: TC_011
+Title: Database Validation - Concurrent Submissions
+Test Scenario: Verify data integrity during concurrent submissions
+Test Steps:
+1. Prepare multiple form submissions
+2. Submit forms concurrently
+3. Verify all submissions are processed
+4. Check database for all records
+5. Verify data integrity of each record
+Expected Results:
+- All submissions should be stored correctly
+- No data should be lost or corrupted
+- Each record should maintain its integrity
+- Timestamps should reflect correct submission order
+- No duplicate records should be created
+Priority: High
+Status: Not Started
+
+Test Case ID: TC_012
+Title: Value Aggregation Test - Basic Addition
+Test Scenario: Verify the aggregation of values 1, 2, and 3
+Test Steps:
+1. Navigate to the aggregation page
+2. Enter value 1 in first input field
+3. Enter value 2 in second input field
+4. Enter value 3 in third input field
+5. Click calculate button
+6. Verify the sum
+Expected Results:
+- Values should be successfully added
+- Sum should equal 6
+- Result should be displayed correctly on the UI
+- Result should be stored in the database
+Priority: High
+Status: Not Started
+
+Test Case ID: TC_013
+Title: Value Aggregation with Point 5
+Test Scenario: Verify addition of results with value 5
+Test Steps:
+1. Navigate to the aggregation page
+2. Enter previous result (6) in first field
+3. Enter value 5 in second field
+4. Click calculate button
+5. Verify the final sum
+Expected Results:
+- Values should be successfully added
+- Sum should equal 11
+- Result should be displayed correctly
+- Result should be stored in database
+Priority: High
+Status: Not Started
+
+Test Case ID: TC_014
+Title: API Response Validation - Success Scenario
+Test Scenario: Verify API response for successful calculations
+Test Steps:
+1. Send POST request to calculation endpoint
+2. Include valid values in request body
+3. Verify response status code
+4. Validate response format
+5. Check calculation result in response
+Expected Results:
+- API should return 200 status code
+- Response should contain correct calculation result
+- Response format should match API specification
+- Response time should be within acceptable limits
+Priority: High
+Status: Not Started
+
+Test Case ID: TC_015
+Title: API Error Handling Validation
+Test Scenario: Verify API error handling for invalid inputs
+Test Steps:
+1. Send POST request with invalid data
+2. Verify error response status code
+3. Validate error message format
+4. Check error details in response
+Expected Results:
+- API should return appropriate error status code (400)
+- Error message should be clear and descriptive
+- Response should include detailed error information
+- Error should be logged in the system
+Priority: High
+Status: Not Started
+
