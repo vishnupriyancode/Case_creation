@@ -1,0 +1,204 @@
+:root {
+  --primary-color: #64748b;
+  --primary-hover: #475569;
+  --secondary-color: #94a3b8;
+  --background: #f1f5f9;
+  --card-bg: #ffffff;
+  --text-primary: #334155;
+  --text-secondary: #64748b;
+  --border-color: #cbd5e1;
+  --gradient-start: #94a3b8;
+  --gradient-end: #cbd5e1;
+  --form-bg: #f8fafc;
+  --form-border: #e2e8f0;
+  --form-hover: #e2e8f0;
+  --form-focus: #cbd5e1;
+}
+
+body {
+  background: linear-gradient(135deg, #e2e8f0 0%, #f8fafc 100%);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.upload-section {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.requirements-container {
+  margin: 20px 0;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 6px;
+}
+
+.requirements-text {
+  margin: 0;
+  color: #495057;
+  line-height: 1.5;
+}
+
+.upload-box {
+  border: 2px dashed #dee2e6;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  margin: 20px 0;
+  transition: border-color 0.3s ease;
+}
+
+.upload-box:hover {
+  border-color: #adb5bd;
+}
+
+.file-input {
+  display: none;
+}
+
+.file-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  color: #495057;
+}
+
+.file-label i {
+  font-size: 24px;
+  color: #6c757d;
+}
+
+.file-name {
+  margin: 10px 0 0;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.action-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.analyze-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  background: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.analyze-btn:hover:not(:disabled) {
+  background: #0b5ed7;
+}
+
+.analyze-btn:disabled {
+  background: #adb5bd;
+  cursor: not-allowed;
+}
+
+.test-case-count {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+}
+
+/* Progress Bar Styles */
+.progress-container {
+  margin-top: 20px;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #e9ecef;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #0d6efd;
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  text-align: center;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+/* Result Section Styles */
+.result-section {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.error-message {
+  color: #dc3545;
+  padding: 10px;
+  background: #f8d7da;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.domain-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f8f9fa;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.domain-label {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.domain-value {
+  color: #495057;
+  font-weight: 500;
+}
+
+.result-content {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+.result-content pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+} 

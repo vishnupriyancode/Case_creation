@@ -1,0 +1,69 @@
+<div class="container">
+  <div class="upload-section">
+    <h2>Test Case Generator</h2>
+    
+    <div class="requirements-container">
+      <p class="requirements-text">
+        Please upload a .doc or .docx file containing the QA BRD document. The document should include business requirements, test scenarios, and expected outcomes.
+      </p>
+    </div>
+
+    <div class="upload-box">
+      <input
+        type="file"
+        (change)="onFileSelected($event)"
+        accept=".doc,.docx"
+        class="file-input"
+        id="fileInput"
+      />
+      <label for="fileInput" class="file-label">
+        <i class="fas fa-cloud-upload-alt"></i>
+        <span>Choose a QA BRD Document</span>
+      </label>
+      <p class="file-name" *ngIf="selectedFile">
+        Selected file: {{ selectedFile.name }}
+      </p>
+    </div>
+
+    <div class="action-section">
+      <button
+        (click)="uploadAndAnalyze()"
+        [disabled]="!selectedFile || isLoading"
+        class="analyze-btn"
+      >
+        <i class="fas" [class.fa-spinner]="isLoading" [class.fa-spin]="isLoading" [class.fa-upload]="!isLoading"></i>
+        <span>Upload and Analyze</span>
+        <span class="test-case-count" *ngIf="testCaseCount > 0">
+          ({{ testCaseCount }} test cases)
+        </span>
+      </button>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-container" *ngIf="showProgress">
+      <div class="progress-bar">
+        <div class="progress-fill" [style.width.%]="progress"></div>
+      </div>
+      <div class="progress-text">Generating test cases... {{ progress }}%</div>
+    </div>
+  </div>
+
+  <div class="result-section" *ngIf="analysisResult || error">
+    <div class="error-message" *ngIf="error">
+      {{ error }}
+    </div>
+    
+    <div class="analysis-result" *ngIf="analysisResult">
+      <div class="result-header">
+        <h3>Analysis Results</h3>
+        <div class="domain-info" *ngIf="userDomainId">
+          <span class="domain-label">Domain ID:</span>
+          <span class="domain-value">{{ userDomainId }}</span>
+        </div>
+      </div>
+      <div class="result-content">
+        <pre>{{ analysisResult | json }}</pre>
+      </div>
+    </div>
+  </div>
+</div> 
